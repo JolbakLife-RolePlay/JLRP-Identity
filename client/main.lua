@@ -46,11 +46,11 @@ end)
 RegisterNUICallback("register", function(data, cb)
 	Framework.TriggerServerCallback("Identity:registerIdentity", function(callback)
 		if callback then
-			Framework.ShowNotification(_U("thank_you_for_registering"))
+			Framework.ShowNotification(_Locale("thank_you_for_registering"))
 			EnableGui(false)
 			TriggerEvent("esx_skin:playerRegistered")
 		else
-			Framework.ShowNotification(_U("registration_error"))
+			Framework.ShowNotification(_Locale("registration_error"))
 		end
 	end, data)
 end)
