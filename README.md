@@ -6,7 +6,7 @@
   * [oxmysql](https://github.com/overextended/oxmysql)
 
 ## Installation
-- Add this to your `server.cfg` after JLRP-Framework:
+- Add this to your `server.cfg` after JLRP-JLRP-Framework:
 
 ```
 ensure JLRP-Identity

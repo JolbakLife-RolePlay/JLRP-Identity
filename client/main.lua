@@ -8,17 +8,17 @@ local function checkIdentity()
 	end)
 end
 
-AddEventHandler("Framework:loadingScreenOff", function()
+AddEventHandler("JLRP-Framework:loadingScreenOff", function()
 	checkIdentity()
 end)
 
 local guiEnabled, isDead = false, false
 
-AddEventHandler("Framework:onPlayerDeath", function(data)
+AddEventHandler("JLRP-Framework:onPlayerDeath", function(data)
 	isDead = true
 end)
 
-AddEventHandler("Framework:onPlayerSpawn", function(spawn)
+AddEventHandler("JLRP-Framework:onPlayerSpawn", function(spawn)
 	isDead = false
 end)
 
