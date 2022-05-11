@@ -33,7 +33,7 @@ class FormValidator {
           height: document.querySelector('#height').value.trim()
         }
 
-        fetch('https://${GetParentResourceName()}/register', {
+        fetch('https://JLRP-Identity/register', {
           method: 'POST',
           body: JSON.stringify(data)
         })
